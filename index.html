@@ -1,2 +1,196 @@
-"Hello World" 
-<!DOCTYPE html><html><body><iframe src="https://web.powerva.microsoft.com/environments/Default-8d0d81ba-ed03-4c6f-9248-a3b3967ca35c/bots/new_bot_1a0299b3d2bb4c54bbe94d4c64d2fdf7/webchat" frameborder="0" style="width: 100%; height: 100%;"></iframe></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 5px;
+  text-align: center;
+  height: 50px;
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+body {
+  /*background-color: lightblue; */
+  background-image: url("yellow_rock.gif");
+}
+
+/* Create 2 equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>C# Libraries</h2>
+  
+</div>
+
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Features</a>
+    <div class="dropdown-content">
+	  <a href="https://www.nuget.org/profiles/HenriGuillot">All packages (on Nuget.org)</a>
+	  <a href="https://github.com/guihen01?tab=repositories">All repositories (on Github.com)</a>
+      <a href="https://github.com/guihen01/DockerLibr">DockerLibr (on Github.com)</a>
+      <a href="https://github.com/guihen01/RestApi-JIRA-Lib">RestApi-JIRA-Lib (on Github.com)</a>
+	  <a href="https://github.com/guihen01/Rest-API-Get-All-Groups">Get-All-Jira-Groups (on Github.com)</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Docs</a>
+    <div class="dropdown-content">
+	  <a href="https://github.com/guihen01/DockerLibr/blob/main/README.md">DockerLibr</a>
+	  <a href="DockerLibr/DockerLibr.html">DockerLibr (Methods)</a>
+	  <a href="https://github.com/guihen01/RestApi-JIRA-Lib/blob/main/README.md">JiraLib</a>
+	  <a href="RestApi-JIRA-Lib/RestApi-JIRA-Lib.html">JiraLib (Methods)</a>
+	  
+    </div>
+  </li>
+  <li style="float:right"><a class="active" href="About.html">About</a></li>
+</ul>
+
+<div class="row">
+  <div class="column">
+    <a href='https://ci.appveyor.com/project/guihen01/restapi-jira-lib'><img src="https://ci.appveyor.com/api/projects/status/aulan7yl97p39r70?svg=true" referrerpolicy="no-referrer" alt="Build status"></a>
+    <a href='https://www.nuget.org/packages/RestApi-JIRA-Lib/'><img src="https://img.shields.io/nuget/v/RestApi-JIRA-Lib.svg" referrerpolicy="no-referrer" alt="NuGet"></a>
+	<h2>RestAPI-JIRA-Lib (JiraLib)</h2>
+    <p>routines (methods) in a DLL library, to be used in C# code.</p>
+	<p>routines using JIRA REST API  to get or post  details on JIRA server  & groups, users, or Issues . results are printed on console and/or  writen in json formated files and/or plain text formated files,  and for some, in  Excel files.</p>
+	<p>Doc at : https://github.com/guihen01/RestApi-JIRA-Lib/blob/main/README.md</p>
+	
+	<hr size="4" width="100%" color="blue"> 
+	<a href='https://www.nuget.org/packages/FFTlib/'><img src="https://img.shields.io/nuget/v/FFTlib.svg" referrerpolicy="no-referrer" alt="NuGet"></a>
+	<h2>FFTLib</h2>
+	<p>routines (methods) in a DLL library, to be used in C# code.</p>
+	<p>Calcul de Transformée de Fourier Discrète et de la Transformée de Fourier rapide Fast fourier Transform  (FFT) & Discrete Fourier Transform (DFT)
+       ensemble de routines</p>
+	   
+	<hr size="4" width="100%" color="blue"> 
+	<a href='https://www.nuget.org/packages/Get-All-Jira-Groups/'><img src="https://img.shields.io/nuget/v/Get-All-Jira-Groups.svg" referrerpolicy="no-referrer" alt="NuGet"></a>
+	<a href='https://www.fuget.org/packages/Get-All-Jira-Groups'><img src="https://www.fuget.org/packages/Get-All-Jira-Groups/badge.svg" referrerpolicy="no-referrer" alt="Get-All-Jira-Groups on fuget.org"></a>
+	<h2>Get-All-Jira-Groups</h2>
+	<p>routines (method) in a DLL library, to be used in C# code.</p>
+	<p>Program in C# . the exec Get all Jira groups , it uses the REST API  end point : /rest/api/2/groups/picker.  extract all Jira groups and parse them in a json file (Json formated) & in a text formated file.  Rest API from Jira Server platform REST API reference)</p> 
+	  
+	<hr size="4" width="100%" color="blue">  
+	
+  </div>
+  
+  <div class="column">
+    <a href='https://www.nuget.org/packages/DockerLibr/'><img src="https://img.shields.io/nuget/v/DockerLibr.svg" referrerpolicy="no-referrer" alt="NuGet"></a>
+    <a href='https://www.fuget.org/packages/DockerLibr'><img src="https://www.fuget.org/packages/DockerLibr/badge.svg" referrerpolicy="no-referrer" alt="DockerLibr on fuget.org"></a>
+	<h2>DockerLibr</h2>
+	<p>routines (methods) in a DLL library, to be used in C# code.</p>
+    <p>Library of methods working on Docker Hub . Methods get and parse Docker containers & images in Docker Hub repository or on local or remote host server or computers.
+     Doc & repository at : https://github.com/guihen01/DockerLibr </p>
+	
+	 <hr size="4" width="100%" color="blue"> 
+	 <a href='https://www.nuget.org/packages/GetHttpResponse/'><img src="https://img.shields.io/nuget/v/GetHttpResponse.svg" referrerpolicy="no-referrer" alt="NuGet"></a>
+	 <h2>GetHttpResonse</h2>
+	<p>routines (method) in a DLL library, to be used in C# code.</p>
+	<p>Send demand of authorization to a server , to get or post request via Http Rest API. Doc & repository at https://github.com/guihen01/GetHttpResponse </p>
+	
+	<hr size="4" width="100%" color="blue"> 
+	<a href='https://www.nuget.org/packages/PickJiraItems/'><img src="https://img.shields.io/nuget/v/PickJiraItems.svg" referrerpolicy="no-referrer" alt="NuGet"></a>
+	<a href='https://www.fuget.org/packages/PickJiraItems'><img src="https://www.fuget.org/packages/PickJiraItems/badge.svg" referrerpolicy="no-referrer" alt="PickJiraItems on fuget.org"></a>
+	<h2>Pick-Jira-Items</h2>
+	<p>routines (methods based on rest Api) in a DLL library, to be used in C# code.</p>
+	<p>Returns a list of JIRA, users, groups, name, emailadress matching a specific string
+	<p><a href='https://github.com/guihen01/Pick-Jira-Items/blob/main/README.md'>PickJiraItems</a></p>
+	
+	<hr size="4" width="100%" color="blue"> 
+	
+  </div>    
+
+<h3></h3>
+<p></p>
+
+</body>
+</html>
